@@ -1,4 +1,10 @@
+FROM eclipse-temurin:21-jdk-alpine AS builder
+WORKDIR /app
+COPY . .
+RUN ./mvnw clean package -DskipTests
+
 FROM eclipse-temurin:21-jdk-alpine
-VOLUME /tmp
-COPY target/*.jar app.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
+WORKDIR /app
+COPY --from=builder /app/target/*.jar app.jar
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "app.jar"]
