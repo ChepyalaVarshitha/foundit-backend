@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 
 @RestController
 @RequestMapping("/found-items")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {"http://localhost:5173", "https://foundit-frontend.vercel.app"})
 public class FoundItemController {
     
     @Autowired
