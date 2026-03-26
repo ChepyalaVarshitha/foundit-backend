@@ -15,8 +15,8 @@ public class BaseController {
                "<li><a href='/api/lost-items'>/api/lost-items</a> - Get all lost items</li>" +
                "<li><a href='/api/found-items'>/api/found-items</a> - Get all found items</li>" +
                "<li><a href='/api/search?q=test'>/api/search?q=test</a> - Search items</li>" +
-               "<li>/api/auth/signup - User registration</li>" +
-               "<li>/api/auth/login - User login</li>" +
+               "<li><a href='/api/auth/signup'>/api/auth/signup</a> - User registration</li>" +
+               "<li><a href='/api/auth/login'>/api/auth/login</a> - User login</li>" +
                "</ul>" +
                "<p><strong>✅ All endpoints are functional and connected to PostgreSQL database.</strong></p>";
     }
