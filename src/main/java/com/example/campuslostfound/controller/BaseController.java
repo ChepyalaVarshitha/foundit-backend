@@ -12,9 +12,12 @@ public class BaseController {
                "<p>Available endpoints:</p>" +
                "<ul>" +
                "<li><a href='/api/test'>/api/test</a> - Test endpoint</li>" +
-               "<li><a href='/api/h2-console'>/api/h2-console</a> - Database console</li>" +
-               "<li>/api/lost-items - Coming soon</li>" +
-               "<li>/api/found-items - Coming soon</li>" +
-               "</ul>";
+               "<li><a href='/api/lost-items'>/api/lost-items</a> - Get all lost items</li>" +
+               "<li><a href='/api/found-items'>/api/found-items</a> - Get all found items</li>" +
+               "<li><a href='/api/search?q=test'>/api/search?q=test</a> - Search items</li>" +
+               "<li>/api/auth/signup - User registration</li>" +
+               "<li>/api/auth/login - User login</li>" +
+               "</ul>" +
+               "<p><strong>✅ All endpoints are functional and connected to PostgreSQL database.</strong></p>";
     }
 }
